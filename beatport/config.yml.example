@@ -1,0 +1,8 @@
+config:
+  mailto: myemail@myserver.com
+  mailserver: smtp.gmail.com
+  port: 587
+  tls: true
+  username: agmailuser@gmail.com
+  password: apassword
+  domain: domainname.com
