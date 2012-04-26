@@ -14,6 +14,8 @@ output = "House chart:\n\n"
 output += chart.parse(beatport.get_house)
 output += "\nNu-disco chart:\n\n"
 output += chart.parse(beatport.get_nudisco)
+output += "\nDeep House chart:\n\n"
+output += chart.parse(beatport.get_deephouse)
 
 # email
 def email_results(results)
