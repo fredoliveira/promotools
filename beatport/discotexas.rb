@@ -21,7 +21,7 @@ output += chart.parse(beatport.get_deephouse)
 def email_results(results)
   config = YAML.load_file("config.yml")
 
-  Pony.mail(:to => config["config"]["mailto"], :subject => "Discotexas @ Beatport", :body => results, :via => :smtp, :via_options => {
+  Pony.mail(:to => config["config"]["mailto"], :subject => "Discotexas @ Beatport: #{Time.now.strftime('%d %B %Y')}", :body => results, :via => :smtp, :via_options => {
     :address              => config["config"]["mailserver"],
     :port                 => config["config"]["port"],
     :enable_starttls_auto => config["config"]["tls"],
