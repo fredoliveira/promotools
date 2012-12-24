@@ -1,5 +1,5 @@
-require 'chart'
-require 'beatport'
+require_relative 'chart'
+require_relative 'beatport'
 
 # things to look for
 artists = ["Xinobi", "Moullinex", "Lazydisco"]
@@ -32,4 +32,5 @@ def email_results(results)
   })
 end
 
-email_results(output)
+puts output
+#email_results(output)
