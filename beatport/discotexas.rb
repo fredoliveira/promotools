@@ -32,5 +32,4 @@ def email_results(results)
   })
 end
 
-puts output
-#email_results(output)
+email_results(output)
